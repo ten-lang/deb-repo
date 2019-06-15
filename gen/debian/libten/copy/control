@@ -1,0 +1,14 @@
+Source: libten
+Priority: optional
+Maintainer: Ray Stubbs <stubbs.ray@gmail.com>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Section: libs
+Homepage: https://github.com/ten-lang/libten
+Vcs-Git: https://github.com/ten-lang/libten.git
+Vcs-Browser: https://github.com/ten-lang/libten.git
+
+Package: libten
+Architecture: any
+Multi-Arch: same
+Description: Ten language implementation library.

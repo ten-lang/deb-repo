@@ -1,0 +1,14 @@
+Source: ten
+Section: unknown
+Priority: optional
+Maintainer: Ray Stubbs <stubbs.ray@gmail.com>
+Build-Depends: debhelper (>= 10), libreadline-dev, libten (>= 0.5.0), libtml
+Standards-Version: 4.1.2
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: https://anonscm.debian.org/git/collab-maint/ten.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/ten.git
+
+Package: ten
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libreadline-dev, libten, libtml
+Description: CLI for the Ten programming language.

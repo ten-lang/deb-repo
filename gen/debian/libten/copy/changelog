@@ -1,0 +1,22 @@
+libten (0.6.0-1) unstable; urgency=medium
+  * Add assertion operator.
+  * Fix some bugs.
+  * Remove implementation explanations from source code into articles.
+
+libten (0.5.0-1) unstable; urgency=medium
+  * Change the C API a bit.
+  * Smaller record foorprint.
+  * Better record growth rate.
+  * Hash short symbols at creation time.
+
+libten (0.4.0-1) unstable; urgency=medium
+
+  * Fixed a few bugs.
+  * Normalized the API.
+  * Add native function re-entrancy.
+
+libten (0.3.0-2) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Ray Stubbs <stubbs.ray@gmail.com>  Thu, 18 Apr 2019 07:03:48 +0200

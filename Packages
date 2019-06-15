@@ -1,0 +1,49 @@
+Package: libten
+Version: 0.2.0-1
+Architecture: amd64
+Maintainer: Ray Stubbs <stubbs.ray@gmail.com>
+Installed-Size: 1532
+Filename: ./libten_0.2.0-1_amd64.deb
+Size: 219704
+MD5sum: 259b5054f40e2d3a1e5ca8c37ecc5716
+SHA1: 1822de5c0a7b80f27f3f356f7685fec7e6253e6e
+SHA256: 5dd22287b1fa50df369329f1cd4866885da6358b435eb9c6108c6b605b27fefd
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/ten-lang/libten
+Description: Ten language implementation library.
+
+Package: libtml
+Version: 0.1.0-1
+Architecture: amd64
+Maintainer: Ray Stubbs <stubbs.ray@gmail.com>
+Installed-Size: 33
+Depends: libten
+Filename: ./libtml_0.1.0-1_amd64.deb
+Size: 8512
+MD5sum: cd6cb569ac230b8869452963af28ab22
+SHA1: cbcf076c03a577370c9e3aefb9fbe61ca6e2c878
+SHA256: 4fa22382539824871fa155dd303d474423ad870947de9e38d616700cee08e261
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/ten-lang/libtml
+Description: Ten Module Loader
+
+Package: ten
+Version: 0.2.0-1
+Architecture: amd64
+Maintainer: Ray Stubbs <stubbs.ray@gmail.com>
+Installed-Size: 61
+Depends: libc6 (>= 2.14), libreadline7 (>= 6.0), libreadline-dev, libten, libtml
+Filename: ./ten_0.2.0-1_amd64.deb
+Size: 13536
+MD5sum: 344b9a511a10570e307e35b7bb7f64e0
+SHA1: b020ac04c67de87fc64b747299e35232d97679a5
+SHA256: 096e18c6d8e105ac27484819b1cd441f919a7c3c49e7e4d31c1b4f09a995887e
+Section: unknown
+Priority: optional
+Homepage: <insert the upstream URL, if relevant>
+Description: CLI for the Ten programming language.
+

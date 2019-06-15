@@ -1,18 +1,15 @@
 #! /bin/sh
 cd ..
-echo "Suite: stable" > Release
-echo "Date:  $(date -R -u)" >> Release
-echo "Valid-Until: $(date -d'+ 5 years') -R -u" >> Release
-echo "Signed-By: $(cat ten-lang.pub | gpg --fingerprint | sed '4q;d' | sed -E 's/^ *//g' | sed -E 's/ +/, /g')" >> Release
-echo "SHA256:" >> Release
+gpg --output KEY.gpg --armor --export -a ten-lang
+apt-ftparchive release . > Release
+apt-ftparchive packages . > Packages
 
-for FILE in *.deb *.ddeb
-do
-    echo $(cat $FILE | sha256sum | sed 's/ .*//') $(ls -l $FILE | cut -d ' ' -f5) $FILE >> Release
-done
-
-
+rm -f Packages.gz
 rm -f InRelease
-gpg --clearsign -o InRelease Release
-mini-dinstall -c .mini-dinstall.conf  .
+rm -f Release.gpg
+
+gzip -k -f Packages
+
+gpg --default-key ten-lang -abs -o Release.gpg Release
+gpg --default-key ten-lang --clearsign -o InRelease Release
 

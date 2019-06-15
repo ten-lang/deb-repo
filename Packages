@@ -1,49 +1,93 @@
-Package: libten
-Version: 0.2.0-1
+Package: libten-dbgsym
+Package-Type: ddeb
 Architecture: amd64
-Maintainer: Ray Stubbs <stubbs.ray@gmail.com>
-Installed-Size: 1532
-Filename: ./libten_0.2.0-1_amd64.deb
-Size: 219704
-MD5sum: 259b5054f40e2d3a1e5ca8c37ecc5716
-SHA1: 1822de5c0a7b80f27f3f356f7685fec7e6253e6e
-SHA256: 5dd22287b1fa50df369329f1cd4866885da6358b435eb9c6108c6b605b27fefd
-Section: libs
-Priority: optional
+Version: 0.6.0-1
+Auto-Built-Package: debug-symbols
 Multi-Arch: same
+Priority: optional
+Section: debug
+Source: libten
+Maintainer: Ray Stubbs <stubbs.ray@gmail.com>
+Installed-Size: 160
+Depends: libten (= 0.6.0-1)
+Filename: ./libten-dbgsym_0.6.0-1_amd64.ddeb
+Size: 122956
+MD5sum: 38aac6244a3d4f08444a6fe763abd89e
+SHA1: 11fe795d2d5c0d09ed14136a398e53beae8d837c
+SHA256: 2475a6a8d7889c98bf3c04c225dae1b4a351a6b06dd4c7aa735f1e2c6f7a48b6
+SHA512: d4d63920735861a8fa3c9aa13f50e71e4987434721d54b17f9ad2cb25a68b3b32f0655c6ddd5dd0593918dbdcd3aa0acbfc795edbede8da4c0e688af399d0a42
+Description: debug symbols for libten
+Build-Ids: 1238af9f0b65b0837b4b8e437f8ba0acf50114b7 465c8526d63b32f5c0da1807bcf1d8829acf254a
+
+Package: libten
+Architecture: amd64
+Version: 0.6.0-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Maintainer: Ray Stubbs <stubbs.ray@gmail.com>
+Installed-Size: 1681
+Filename: ./libten_0.6.0-1_amd64.deb
+Size: 246072
+MD5sum: cd9a4bd7154a2dd738f6a1a93201885a
+SHA1: 44eba3169aee0b61b922abfcf9ae9f254d03274f
+SHA256: b8a30039c2ef533c1f2916af9836272ee6c5a4acb4d8c516a32ab6b70fc247d0
+SHA512: 0cd2dc23ec4b4d7751dfcaa960bc409663728e2b7edf26734e48f79c1de3bbb5bf33bc4d4cdf9947bb4d795f00cd408a59647c1c78e74bbc98830fb3f6b6df89
 Homepage: https://github.com/ten-lang/libten
 Description: Ten language implementation library.
 
 Package: libtml
-Version: 0.1.0-1
 Architecture: amd64
+Version: 0.2.0-1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
 Maintainer: Ray Stubbs <stubbs.ray@gmail.com>
 Installed-Size: 33
 Depends: libten
-Filename: ./libtml_0.1.0-1_amd64.deb
-Size: 8512
-MD5sum: cd6cb569ac230b8869452963af28ab22
-SHA1: cbcf076c03a577370c9e3aefb9fbe61ca6e2c878
-SHA256: 4fa22382539824871fa155dd303d474423ad870947de9e38d616700cee08e261
-Section: libdevel
-Priority: optional
-Multi-Arch: same
+Filename: ./libtml_0.2.0-1_amd64.deb
+Size: 8560
+MD5sum: 97806f27ce9bb364b9ad6f674ca77c42
+SHA1: cdccfd8ae807874bc47a9d31a52025fd2cfb1c7a
+SHA256: 5e0f795359b8a6bcabb05092fbc52f488c6c509cacd55d0bed3a6e3397c5427f
+SHA512: 03361dd5fad7a5b007ff60ac047c5c1fd95c7c37486c53639ddfccc9da29d7d68098bd57e6485bbc611127bd5daea39ef736af0c4e9d4e8df03c55048b905979
 Homepage: https://github.com/ten-lang/libtml
 Description: Ten Module Loader
 
-Package: ten
-Version: 0.2.0-1
+Package: ten-dbgsym
+Package-Type: ddeb
 Architecture: amd64
+Version: 0.6.0-1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ten
+Maintainer: Ray Stubbs <stubbs.ray@gmail.com>
+Installed-Size: 35
+Depends: ten (= 0.6.0-1)
+Filename: ./ten-dbgsym_0.6.0-1_amd64.ddeb
+Size: 9264
+MD5sum: dd86b6cd037b2820295e9cdcb9c706f9
+SHA1: 45677cf4478f827afd17dd86da77d8d72758ca1e
+SHA256: 24c7672d28fe7c1dfa799c0c72888d1e6eb8b875f826481580a57818d3808d96
+SHA512: 3180caf18ab46510035761ab2d56b690b38e7c76f7385f2e6e9f85c494023c5d149436e7ef532e1b008d6f3f50e64b0c4fec4dfccce6f1ca4ad07b731a75f93e
+Description: debug symbols for ten
+Build-Ids: 1ab0a6b3716761cbd623e20727ec3dbc523e040e ea8990e0adf85a2faaf591ee1d2e472fa703ad37
+
+Package: ten
+Architecture: amd64
+Version: 0.6.0-1
+Priority: optional
+Section: unknown
 Maintainer: Ray Stubbs <stubbs.ray@gmail.com>
 Installed-Size: 61
 Depends: libc6 (>= 2.14), libreadline7 (>= 6.0), libreadline-dev, libten, libtml
-Filename: ./ten_0.2.0-1_amd64.deb
-Size: 13536
-MD5sum: 344b9a511a10570e307e35b7bb7f64e0
-SHA1: b020ac04c67de87fc64b747299e35232d97679a5
-SHA256: 096e18c6d8e105ac27484819b1cd441f919a7c3c49e7e4d31c1b4f09a995887e
-Section: unknown
-Priority: optional
+Filename: ./ten_0.6.0-1_amd64.deb
+Size: 13960
+MD5sum: 610198711fbaee775571151d36909ae7
+SHA1: 2c3625483648bcac3daed336f7baf3cdae0bcc67
+SHA256: 35c58443c7486f53b44f0d5cbf3c235cf53cd7489ab16bcd241b4788ca4e4eef
+SHA512: c638aff80769df5b233daa5ff0095966c03167d75adab1ee7449f03e40eafc5b91e851fde5f2d043e6f7f98bc0f9b7b4bac42c7415adf0499dcfc852c3658960
 Homepage: <insert the upstream URL, if relevant>
 Description: CLI for the Ten programming language.
 
